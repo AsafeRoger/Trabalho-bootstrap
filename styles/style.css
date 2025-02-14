@@ -1,0 +1,78 @@
+
+body {
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar {
+    padding: 0;
+    background-color: #333;
+}
+
+.navbar-brand {
+    color: #b0b0b0;
+}
+
+/* Estilo para o menu lateral */
+
+.sidebar {
+    height: 100vh;
+    min-height: 100vh;
+    background: #b0b0b0;
+    color: #b0b0b0;
+    padding: 15px;
+    top: 0;
+    position: sticky;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    background-color: #333;
+    
+}
+
+.sidebar a {
+    color: #b0b0b0;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.sidebar a:hover {
+    background: #b0b0b0;
+}
+
+.login {
+    min-height: 93vh;
+}
+
+/* Ocultar a sidebar em telas pequenas */
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        z-index: 1021 !important;
+        transform: translateX(-100%);
+    }
+
+    .sidebar.show {
+        transform: translateX(0);
+    }
+}
+
+.dashboardTitle {
+    max-height: 72px;
+}
+
+.btn-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+}
+
+.card-img-top {
+    height: 300px;
+}
